@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
     "dev": "node server.js",
     "test": "tape tests/**/*.test.js | tap-diff",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/sarah-due/FoodParty/issues"
   },
-  "homepage": "https://github.com/sarah-due/FoodParty#readme"
+  "homepage": "https://github.com/sarah-due/FoodParty#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0"
+  }
 }
