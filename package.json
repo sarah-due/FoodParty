@@ -7,9 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "dev": "node server.js",
-    "test": "tape tests/**/*.test.js | tap-diff",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,10 @@
+
+<div class="container">
+  {{#each food}}
+  <div class="food-list">
+    <p class="recipe-title"> {{recipe}}!</p>
+    <p class="recipe-byline"> Brought to you by: {{chef}}. </p>
+    <a href="/food/{{id}}"><img src="{{food-pic}}" alt="{{recipe}}"></a>
+  </div>
+  {{/each}}
+</div>
