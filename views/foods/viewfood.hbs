@@ -1,8 +1,13 @@
-<div class="container">
-  <h1 class="foodpage-title">{{recipe}}</h1>
-  <p class="recipe-byline"> Brought to you by: {{chef}}. </p>
 
-  <img src="{{food-pic}}" alt={{recipe}}>
+    <div>
+        <h1 class="foodpage-title">{{recipe}}</h1>
+        <p class="recipe-byline"> Brought to you by: {{chef}} </p>
+        <div class="flex-box">
+          <img class="food-profile-pic" src="{{food-pic}}" alt={{recipe}}>
+        </div>
+        <p class="food-comments">"{{comment}}" </p>
+    </div>
 
-  <p class="food-comments"> {{comment}} </p>
-</div>
+    <div class="footer-links">
+        <a id="home" href="/">Take Me Home</a>
+    </div>

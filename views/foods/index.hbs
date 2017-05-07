@@ -1,10 +1,13 @@
+<div class="col-sm-12 food-row">
+    {{#each food}}
+        <div class="col-sm-4">
+          <p class="recipe-title"> {{recipe}}</p>
+          <a href="/food/{{id}}"><img class="homepage-image" src="{{food-pic}}" alt="{{recipe}}"></a>
+          <p class="recipe-byline"> Brought to you by: {{chef}} </p>
+        </div>
+    {{/each}}
+</div>
 
-<div class="container">
-  {{#each food}}
-  <div class="food-list">
-    <p class="recipe-title"> {{recipe}}!</p>
-    <p class="recipe-byline"> Brought to you by: {{chef}}. </p>
-    <a href="/food/{{id}}"><img src="{{food-pic}}" alt="{{recipe}}"></a>
-  </div>
-  {{/each}}
+<div class="footer-links col-sm-12">
+  <a id="addnew" href="/addrecipe">Add Your Favorite Snack!</a>
 </div>
