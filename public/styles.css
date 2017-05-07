@@ -84,6 +84,18 @@ form {
   margin: 40px 0px;
 }
 
+input {
+  width: 13em;
+  border: 2px solid #123958;
+  margin-top: 2px;
+}
+
+textarea {
+  width: 13em;
+  border: 2px solid #123958;
+  margin-top: 2px;
+}
+
 .form-header {
   text-align: center;
   color: #2EC4B6;
@@ -112,4 +124,13 @@ form {
   border: 2px solid #011627;
   border-radius: 15%;
   margin: auto;
+}
+
+#submit {
+  background-color: #ffda66;
+  color: #123958;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px 10px;
 }

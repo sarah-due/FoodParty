@@ -34,5 +34,21 @@ router.get('/addrecipe', (req, res) => {
   res.render('foods/newrecipe')
 })
 
+router.post('/addrecipe', (req, res)=> {
+  var newId = (food.length + 1)
+  var newSnack = {
+    "id":newId,
+    "recipe": req.body.recipe,
+     "chef": req.body.chef,
+    "food-pic": req.body.foodpic,
+    "comment":req.body.comment
+    }
+  foodList.food.push(newSnack)
+  fs.writeFile(__dirname + "/food.json", JSON.stringify(food), (err)=> {
+    res.redirect('/food')
+  })
+})
+
+
 
 module.exports = router

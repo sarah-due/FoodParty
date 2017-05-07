@@ -2,11 +2,11 @@
 
   <div class="form-header"> Share Your Favorite Snack: </div>
 
-  <form action="/food" accept-charset="UTF-8" method="post">
-    <div class="newrecipe"><input type="text" placeholder = "Name of Snack" /> </div>
-    <div class="newrecipe"><input type="text" placeholder = "Name of Chef"/></div>
-    <div class="newrecipe"><input type="text" placeholder = "Food Image URL" /></div>
-    <div class="newrecipe"><textarea type="text" placeholder = "Comments About Snack"></textarea></div>
+  <form action="/addrecipe" accept-charset="UTF-8" method="post">
+    <div class="newrecipe"><input type="text" placeholder = "Name of Snack" name="recipe" /> </div>
+    <div class="newrecipe"><input type="text" placeholder = "Name of Chef" name="chef"/></div>
+    <div class="newrecipe"><input type="text" placeholder = "Food Image URL" name="foodpic"/></div>
+    <div class="newrecipe"><textarea type="text" placeholder = "Comments About Snack" name="comment"></textarea></div>
     <div class="newrecipe"><input id="submit" type="submit" value = "Add New Snack" /></div>
   </form>
 
